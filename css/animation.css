@@ -1,0 +1,91 @@
+/*
+ * Set the .frontImgs div as the containing element.
+ * Also set an explicit height so that it doesn't 
+ * collapse when we position all of the images.
+ */
+.frontImgs
+{
+   position: relative;
+   height: 375px;
+}
+
+.frontImgs img
+{
+   /*
+    * Position the images so that they
+    * are all centered at the top of the
+    * containing element.
+    */
+   position: absolute;
+   top: 0;
+
+   left: 0%; /* For older browsers */
+   left: calc(50% - 320px); /* For modern browsers */
+
+   /* Add a decorative border to the images. */
+   border: 10px ridge #F78203;
+   
+   /* Make sure that images aren't visible initially */
+   opacity: 0;
+   
+   /* All images will use the same animation (defined below) */
+   -webkit-animation-name: slideshow;
+           animation-name: slideshow;
+
+   /*
+    * Because we have 10 images, each displaying for 3 seconds,
+    * we'll want to set our animation to last 30 seconds.
+    */
+   -webkit-animation-duration: 30s;
+           animation-duration: 30s;
+
+   /*
+    * We want our slideshow to continue playing indefinitely.
+    */
+   -webkit-animation-iteration-count: infinite;
+           animation-iteration-count: infinite;
+}
+
+/*
+ * We'll set up a different delay for each image so that they don't all
+ * display at the same time. Since we want each image to display for 3 seconds,
+ * we'll set the delays in 3-second increments.
+ */
+.frontImgs img:nth-child(1)  { -webkit-animation-delay:  0s; animation-delay:  0s; }
+.frontImgs img:nth-child(2)  { -webkit-animation-delay:  3s; animation-delay:  3s; }
+.frontImgs img:nth-child(3)  { -webkit-animation-delay:  6s; animation-delay:  6s; }
+.frontImgs img:nth-child(4)  { -webkit-animation-delay:  9s; animation-delay:  9s; }
+.frontImgs img:nth-child(5)  { -webkit-animation-delay: 12s; animation-delay: 12s; }
+.frontImgs img:nth-child(6)  { -webkit-animation-delay: 15s; animation-delay: 15s; }
+
+
+/*
+ * We'll name our animation 'slideshow'.
+ * The animation will start with the image
+ * opacity set to 0, increase the opacity to 1
+ * at the 10% point, and then reduce the
+ * opacity back to 0 at the 15% point.
+ *
+ * We're using the 10% mark to ensure that the
+ * image only displays for 3 seconds of our
+ * 30 second animation time.
+ *
+ * We'll need to define the animation twice,
+ * once using the -webkit- prefix and once
+ * without the prefix.
+ */
+@-webkit-keyframes slideshow
+{
+   0%   { opacity: 0; }
+   10%  { opacity: 1; }
+   15%  { opacity: 0; }
+
+}
+
+@keyframes slideshow
+{
+   0%   { opacity: 0; }
+   10%  { opacity: 1; }
+   15%  { opacity: 0; }
+}
+
