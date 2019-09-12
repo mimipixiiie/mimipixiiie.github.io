@@ -8,12 +8,16 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {
-	background-image: url("image/images0.jpg");/* The image/images used */
+	background-image: url("image/b2.jpg");/* The image/images used */
 		  background-color: white; /* Used if the image is unavailable */
-	  height: 500px; /* You must set a specified height */
-	  background-position: center; /* Center the image */
+	  height: 1000px; /* You must set a specified height */
+	  background-position: top; /* Center the image */
 	  background-repeat: no-repeat; /* Do not repeat the image */
-	  background-size: cover; /* auto |  cover | 300px 500px  -> Resize the background image to cover the entire container */
+	  /*
+  background-attachment: fixed;
+  min-height: 100%;
+  */
+	  background-size: 1300px 810px; ( auto |  cover | 300px 500px  -> Resize the background image to cover the entire container )
 
 	color: maroon;
 font-family: "Lato", sans-serif}
@@ -78,57 +82,126 @@ font-family: "Lato", sans-serif}
 
 
 
-
-
-
-
-
 <!-- Page content -->
 
 
 
 
+<!-- First Parallax Image with Logo Text -->
+<br />  <br />  <br /> 
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">WELCOME <span class="w3-hide-small">to </span>MY WEBSITE</span>
+  </div>
+</div>
+
+<br />  <br />  <br /> <br />  <br />  <br /> 
+<br />  <br />  <br /> <br />  <br />  <br /> 
+<br />  <br />  <br /> <br />  <br />  <br /> 
+<br />  <br />  <br /> <br />  <br />  <br /> 
+<br />  <br />  <br /> <br />  <br />  <br /> 
+<br />  <br />  <br /> <br />  <br />  <br /> 
 
 
 
 
 
-<div class="w3-content" style="max-width:2000px;margin-top:46px;" >
-
-  <div class="w3-container w3-content  w3-padding-64" style="max-width:800px" >
-    <h1 class="w3-wide  w3-center"> Hi!  <br /> 
-    Welcome to my webpage!</h1> <br />  <br />  <br /> 
-	
-	<!--
-<img src="image/images (3).jpg" alt="" height="415" width="739">
--->
-	
-	<p class="w3-justify">
 
 
-
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about" color= "maroon">
+  <h3 class="w3-center"style="color: maroon;">ABOUT ME</h3>
+	<p class="w3-justify" style="color: maroon;">
+HI! I am Rajashre Roy.
 I have completed my Graduation (<b>BS in CSE,
  <a href="http://www.ewubd.edu">EWU</b></a>)
-  & currently looking for jobs as a Software Engineer. <br />  
+  & currently looking for a job as a Software Engineer. <br />   <br />  <br /> 
   
-	</p>	<p class="w3-justify">
- Before I have worked as a teaching assistant in our university.
- I have good programming skills and have done some projects on PHP, JavaScript and Python.
- I have experiences with C, C++, C#,  PHP, JavaScript, HTML, CSS, Python, R.
-	</p>	<p class="w3-justify"><br />  <br />  <br /> 
+	</p>	<p class="w3-justify"style="color: maroon;">
+ I have good programming skills and have done some projects on <b>PHP, JavaScript, Python</b>.
+ I have experiences with <b>C, C++, C#,  PHP, JavaScript, HTML, CSS, Python, R</b>.
+ Before I have worked as a teaching assistant (<b>UTA</b>) in our university.
+	</p>
+
+<br />  <br />  <br /> <br /> 
+
+  	<div class="w3-row">
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+	
+  <p class="w3-large w3-center w3-padding-5"style="color: maroon;">I really love:</p>
+  <p class="w3-wide"style="color: maroon;"><i class="fa fa-laptop"></i>Programming</p>
+  <div class="w3-light-grey"style="color: maroon;">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">95%</div>
+  </div>
+		<!--
+  <p class="w3-wide"><i class="fa fa-star"></i>Creative Thinking</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">95%</div>
+  </div>	-->
+  <p class="w3-wide"style="color: maroon;"><i class="fa fa-puzzle-piece"></i>Problem Solving</p>
+  <div class="w3-light-grey"style="color: maroon;">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">95%</div>
+  </div>
+  <p class="w3-wide"style="color: maroon;"><i class="fa fa-smile-o"></i>Sleeping</p>
+  <div class="w3-light-grey"style="color: maroon;">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">100%</div>
+  </div>
+	
+    </div>
+	
+    <div class="w3-col m6 w3-center w3-padding-large">
+	<!--
+      <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
+	  -->
+  <p class="w3-center"style="color: maroon;"><em><b>I Love Programming</b></em></p>
+      <img src="image/pic.jpg" class="w3-round w3-image  w3-hover-opacity-off" alt="Pic" width="600" height="400">
+    </div>
+	
+  </div>
+
+  <br />  <br />  <br /> <br />  <br />  <br /> 
+
+  
+  	<div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+	<!--
+      <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
+	  -->
+      <img src="image/qq.jpg" class="w3-round w3-image  w3-hover-opacity-off" alt="Pic" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+	
+	<p class="w3-justify"style="color: maroon;">
 Please visit <b>ABOUT ME</b> section to learn more about me. For a closer look at the professional work
  I have done, check out <b>PORT FOLIO or RESUME</b> section. And if you're interested in 
  reaching out to me, I'd love to connect.<br />  <br />  <br /> 
-	</p>	<p class="w3-justify">
-Thank you for taking the time to visit my online portfolio. Have a good day!		
-
+	</p>	<p class="w3-justify"style="color: maroon;">
+Thank you for taking the time to visit my online portfolio. <br/>Have a good day!		
 	</p>
+	
+    </div>
+  </div>
+
 
 </div>
+
+
+
+
+
+
+
+
+
+
 <br />  <br />  <br /> 
 
   <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px;color: maroon;" id="contact">
     <h2 class="w3-wide w3-center">CONTACT</h2>
     <p class="w3-opacity w3-center"><i>Drop a note!</i></p>
     <div class="w3-row w3-padding-32">
@@ -157,7 +230,6 @@ Thank you for taking the time to visit my online portfolio. Have a good day!
   </div>
 
   
-</div>
 
 <!-- End Page Content -->
 
