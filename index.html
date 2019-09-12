@@ -7,7 +7,16 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body {font-family: "Lato", sans-serif}
+body {
+	background-image: url("image/images0.jpg");/* The image/images used */
+		  background-color: white; /* Used if the image is unavailable */
+	  height: 500px; /* You must set a specified height */
+	  background-position: center; /* Center the image */
+	  background-repeat: no-repeat; /* Do not repeat the image */
+	  background-size: cover; /* auto |  cover | 300px 500px  -> Resize the background image to cover the entire container */
+
+	color: maroon;
+font-family: "Lato", sans-serif}
 .mySlides {display: none}
 </style>
 <body>
@@ -17,14 +26,14 @@ body {font-family: "Lato", sans-serif}
   <div class="w3-bar w3-black w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" 
 						onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="portfolio.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>  
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>  
     <div class="w3-dropdown-hover w3-hide-small">
       <button class="w3-padding-large w3-button w3-black" title="ABOUT ME">ABOUT ME <i class="fa fa-caret-down"></i></button>     
       <div class="w3-dropdown-content w3-bar-block w3-card-4">
         <a href="basic.html" class="w3-bar-item w3-button">Personal Info</a>
-        <a href="mygallery.html" class="w3-bar-item w3-button">MY GALLERY</a>
-        <a href="myfavfoods.html" class="w3-bar-item w3-button">My Fav Food</a>
         <a href="myhobbies.html" class="w3-bar-item w3-button">My Hobbies</a>
+        <a href="myfavfoods.html" class="w3-bar-item w3-button">My Fav Food</a>
+        <a href="mygallery.html" class="w3-bar-item w3-button">MY GALLERY</a>
       </div>
     </div>
     <div class="w3-dropdown-hover w3-hide-small">
@@ -40,7 +49,7 @@ body {font-family: "Lato", sans-serif}
     <a href="cv/cv.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESUME</a>
     <a href="myprojects.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MY PROJECTS</a>
     <a href="achievements.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ACHIEVEMENTS</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
     <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
   </div>
 </div>
@@ -52,47 +61,71 @@ body {font-family: "Lato", sans-serif}
     <a href="cv/cv.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RESUME</a>
     <a href="myprojects.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MY PROJECTS</a>
     <a href="achievements.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ACHIEVEMENTS</a>
+        <a href="works.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Work Experiences</a>
+        <a href="study.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Educational Info</a>
+        <a href="skills.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Professional Skills</a>
 
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
 
   <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MORE</a>
 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+
+
+
+
+
+
+
+
+<div class="w3-content" style="max-width:2000px;margin-top:46px;" >
 
   <div class="w3-container w3-content  w3-padding-64" style="max-width:800px" >
-    <h2 class="w3-wide  w3-center">Hi!  Welcome to my webpage!</h2> <br />  <br />  <br /> 
-
+    <h1 class="w3-wide  w3-center"> Hi!  <br /> 
+    Welcome to my webpage!</h1> <br />  <br />  <br /> 
+	
+	<!--
+<img src="image/images (3).jpg" alt="" height="415" width="739">
+-->
 	
 	<p class="w3-justify">
 
 
 
-
-I have just completed BS in Computer Science & Engineering at
- <a href="http://www.ewubd.edu">East West University,Bangladesh</a> .
-  I am currently looking for jobs as a Software Engineer. 
+I have completed my Graduation (<b>BS in CSE,
+ <a href="http://www.ewubd.edu">EWU</b></a>)
+  & currently looking for jobs as a Software Engineer. <br />  
   
 	</p>	<p class="w3-justify">
  Before I have worked as a teaching assistant in our university.
- My programming skills are quite good and i have done some projects on PHP, JavaScript and Python.
-	</p>	<p class="w3-justify">
- I have experiences with C, C++, C#, JavaScript, PHP, HTML, CSS, Python, R languages.
- My professional skills and strengths also include Web development, Object oriented programming,
- machine learning, Office Packages and more. 
-	</p>	<p class="w3-justify">
-Please visit ABOUT ME section to learn more about me. For a closer look at the professional work
- I have done, check out PORT FOLIO or RESUME section. And if you're interested in 
- reaching out to me, I'd love to connect.
+ I have good programming skills and have done some projects on PHP, JavaScript and Python.
+ I have experiences with C, C++, C#,  PHP, JavaScript, HTML, CSS, Python, R.
+	</p>	<p class="w3-justify"><br />  <br />  <br /> 
+Please visit <b>ABOUT ME</b> section to learn more about me. For a closer look at the professional work
+ I have done, check out <b>PORT FOLIO or RESUME</b> section. And if you're interested in 
+ reaching out to me, I'd love to connect.<br />  <br />  <br /> 
 	</p>	<p class="w3-justify">
 Thank you for taking the time to visit my online portfolio. Have a good day!		
 
 	</p>
 
-
 </div>
-
+<br />  <br />  <br /> 
 
   <!-- The Contact Section -->
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
@@ -124,14 +157,30 @@ Thank you for taking the time to visit my online portfolio. Have a good day!
   </div>
 
   
-<!-- End Page Content -->
 </div>
+
+<!-- End Page Content -->
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-44 w3-center w3-opacity w3-black w3-xlarge w3-bottom">
   <p class="w3-medium">My Webpage</p>
 </footer>
+
+
+
+
+
 
 <script>
 // Automatic Slideshow - change image every 4 seconds
